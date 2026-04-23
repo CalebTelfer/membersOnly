@@ -4,6 +4,6 @@ const messageRouter = Router();
 //controller functions
 const { printHello } = require("../controllers/exampleMsgController");
 
-messagesRouter.get("/", printHello);
+messageRouter.get("/", printHello);
 
 module.exports = messageRouter;

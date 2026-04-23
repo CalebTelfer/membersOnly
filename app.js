@@ -16,6 +16,10 @@ const messageRouter = require("./routes/messageRouter");
 
 
 const app = express();
+
+//css path setup
+app.use(express.static(path.join(__dirname, "public")));
+
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
