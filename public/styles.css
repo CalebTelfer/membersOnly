@@ -80,56 +80,65 @@ body {
     justify-self: center;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
     height: 20rem;
     width: 90%;
     flex: .5;
     color: #1e293b;
     border-radius: 4rem;
+    gap: 2rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
 
-    background-color: rgb(255, 255, 255);;
+}
 
+h1 {
+  font-size: clamp(1.5rem, 1.5vw, 3rem);
+}
+
+p {
+font-size: clamp(.8rem, 1.1vw, 2rem);
 }
 
 .hero-content {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    flex: 1;
+}
+
+.logo-container {
+    flex: 1;
+    min-width: 150px;
+}
+.detective-img {
+    width: 100%;
 }
 
 .head-anon-user {
     width: clamp(1rem, 6rem, 8rem);
 }
 
-.L-speech-bubble {
+.speech-bubble {
     position: relative;
+
+    display: flex;
+    align-items: center;
     background-color: #1e293b;
-    width: 20rem;
+
     border-radius: 2rem;
+
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 12rem;
 }
 
-.L-speech-bubble::after {
-  content: "";
-  position: absolute;
-  left: -6px;
-  top: 20px;
-
-  width: 20px;
-  height: 20px;
-  background-color: #1e293b;
-
-  transform: rotate(45deg);
+.speech-bubble-container {
+    flex: 4;
 }
 
-
-.R-speech-bubble {
-    position: relative;
-    background-color: #1e293b;
-    width: 20rem;
-    border-radius: 2rem;
-}
-
-.R-speech-bubble::after {
+.speech-bubble::after {
   content: "";
   position: absolute;
   right: -6px;
@@ -142,16 +151,13 @@ body {
   transform: rotate(45deg);
 }
 
-.L-speech-bubble, .R-speech-bubble > p {
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.2rem;
-}
 .hero-button {
+    display: flex;
+    align-items: center;
     background-color: #1e293b;
     color: white;
-    width: 12rem;
+    max-width: 12rem;
+    padding: 1rem;
     height: 3rem;
     border-radius: 1rem;
 }
@@ -186,12 +192,13 @@ body {
     gap: 1rem;
     margin-top: 1rem;
     flex: .5;
+    width: 90%
 }
 
 .landing-msg {
     background-color: #fbeeee;
     border-radius: 5px;
-    width: 48rem;
+
 }
 
 
