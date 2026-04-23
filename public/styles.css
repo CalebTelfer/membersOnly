@@ -80,7 +80,6 @@ body {
     justify-self: center;
     align-items: center;
     justify-content: center;
-    height: 20rem;
     width: 90%;
     flex: .5;
     color: #1e293b;
@@ -110,9 +109,7 @@ font-size: clamp(.8rem, 1.1vw, 2rem);
     flex: 1;
     min-width: 150px;
 }
-.detective-img {
-    width: 100%;
-}
+
 
 .head-anon-user {
     width: clamp(1rem, 6rem, 8rem);
@@ -135,7 +132,7 @@ font-size: clamp(.8rem, 1.1vw, 2rem);
 }
 
 .speech-bubble-container {
-    flex: 4;
+    flex: 3;
 }
 
 .speech-bubble::after {
@@ -219,4 +216,25 @@ footer {
 
 .align-cen {
     align-items: center;
+}
+
+@media (max-width: 840px) {
+    .hero {
+        flex-direction: column;
+    }
+    .logo-container {
+        width: 200px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .landing-msgs-container {
+        grid-template-columns: auto;
+    }
+
+    .nav-bar {
+        width: 95%;
+    }
 }
