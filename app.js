@@ -31,6 +31,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/messages", messageRouter); // all paths prefixing /messages will be sent here.
 
 app.get("/", (req,res) => res.render("index"));
+app.get("/sign-up", (req, res) => res.render("signUp"));
+app.get("/login", (req, res) => res.render("logIn"));
+
 
 app.listen(8080, (error) => {
     if (error) {

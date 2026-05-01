@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members Only!</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="nav-bar flex">
+        <ul class="flex">
+            <li class="hover">Messages</li>
+            <li class="hover">Login</li>
+            <li class="hover">Sign Up</li>
+        </ul>
+    </nav>
+
+    <h1>Welcome back to the club!</h1>
+    <h3>Please log in below and contribute more messages!</h3>
+    
+    <form class="sign-up-form" action="/login" method="post">
+        <div>
+            <h1>* Username</h1>
+            <input class="sign-up-input" type="text" name="name" id="name" placeholder="Username" required>
+        </div>
+
+        <div>
+            <h1>* Password</h1>
+            <input class="sign-up-input" type="password" name="password" id="password" placeholder="Password goes here" required>
+        </div>
+
+        <button class="hover" type="submit">Submit</button>
+    </form>
+
+
+    <footer>
+        <p>Thanks for visting Members ONLY!</p>
+    </footer>
+</body>
+</html>
